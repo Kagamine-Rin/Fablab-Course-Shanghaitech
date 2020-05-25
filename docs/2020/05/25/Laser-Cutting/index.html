@@ -13,12 +13,12 @@
 <meta property="og:site_name" content="Fabo Academy X Course @ Shanghaitech">
 <meta property="og:description" content="Ill fated laser cutting……SetupMy intention was to design “something that can be inserted into each other”.  However the basic design pattens are almost the same - it’s always some squares or circles,">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://kagamine-rin.github.io/Fablab-Course-Shanghaitech/2020/05/25/Laser-Cutting/1.jpg">
+<meta property="og:image" content="http://kagamine-rin.github.io/Fablab-Course-Shanghaitech/2020/05/25/Laser-Cutting/1.jpg?500x500">
 <meta property="article:published_time" content="2020-05-25T14:19:39.000Z">
-<meta property="article:modified_time" content="2020-05-25T14:40:20.423Z">
+<meta property="article:modified_time" content="2020-05-25T15:44:14.632Z">
 <meta property="article:author" content="Song Ze">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://kagamine-rin.github.io/Fablab-Course-Shanghaitech/2020/05/25/Laser-Cutting/1.jpg">
+<meta name="twitter:image" content="http://kagamine-rin.github.io/Fablab-Course-Shanghaitech/2020/05/25/Laser-Cutting/1.jpg?500x500">
   
     <link rel="alternative" href="/atom.xml" title="Fabo Academy X Course @ Shanghaitech" type="application/atom+xml">
   
@@ -48,12 +48,66 @@
     <!-- 
 <link rel="stylesheet" href="/css/code.css">
  -->
-    <link rel="stylesheet" href="/css/style.css?version=5-25-21-26" type="text/css">
-    <link rel="stylesheet" href="/css/code.css?version=5-25-21-26" type="text/css">
+    <link rel="stylesheet" href="/css/style.css?version=5-25-45-31" type="text/css">
+    <link rel="stylesheet" href="/css/code.css?version=5-25-45-31" type="text/css">
 
 <meta name="generator" content="Hexo 4.2.1"></head>
 
+<script>
+	function set_image_size(image, width, height) 
+{
+    image.setAttribute("width", width + "px");
+    image.setAttribute("height", height + "px");
+}
 
+function hexo_resize_image()
+{
+    var imgs = document.getElementsByTagName('img');
+    for (var i = imgs.length - 1; i >= 0; i--) 
+    {
+        var img = imgs[i];
+
+        var src = img.getAttribute('src').toString();
+
+        var fields = src.match(/(?<=\?)\d*x\d*/g);
+        if (fields && fields.length == 1)
+        {
+            var values = fields[0].split("x");
+            if (values.length == 2)
+            {
+                var width = values[0];
+                var height = values[1];
+
+                if (!(width.length && height.length))
+                {
+                    var n_width = img.naturalWidth;
+                    var n_height = img.naturalHeight;
+                    if (width.length > 0)
+                    {
+                        height = n_height*width/n_width;
+                    }
+                    if (height.length > 0)
+                    {
+                        width = n_width*height/n_height;
+                    }
+                }
+                set_image_size(img, width, height);
+            }
+            continue;
+        }
+
+        fields = src.match(/(?<=\?)\d*/g);
+        if (fields && fields.length == 1)
+        {
+            var scale = parseFloat(fields[0].toString());
+            var width = scale/100.0*img.naturalWidth;
+            var height = scale/100.0*img.naturalHeight;
+            set_image_size(img, width, height);
+        }
+    }
+}
+window.onload = hexo_resize_image;
+</script>
 <body>
 
 <header>
@@ -106,7 +160,7 @@
         
     
         </br>
-        Last Updated on 2020 May 25 22:40:20
+        Last Updated on 2020 May 25 23:44:14
         
     </p>
 
@@ -114,7 +168,7 @@
     <!-- Content -->
     <h1 id="Ill-fated-laser-cutting……"><a href="#Ill-fated-laser-cutting……" class="headerlink" title="Ill fated laser cutting……"></a>Ill fated laser cutting……</h1><h2 id="Setup"><a href="#Setup" class="headerlink" title="Setup"></a>Setup</h2><p>My intention was to design “something that can be inserted into each other”. </p>
 <p>However the basic design pattens are almost the same - it’s always some squares or circles, with slots…. So I made a very innovative attempt - Make it a triangle! Add a hypotenuse (in Chinese: 斜边)!!!!</p>
-<p>So here is my design: <img src="/Fablab-Course-Shanghaitech/2020/05/25/Laser-Cutting/1.jpg" alt="This is a triangle!!"></p>
+<p>So here is my design: <img src="/Fablab-Course-Shanghaitech/2020/05/25/Laser-Cutting/1.jpg?500x500" alt="This is a triangle!!"></p>
 <p>In the sketch file it consists of 2 triangles close to each other (to save material). I want to print 10~20 pieces out to make it a dinosaur :)</p>
 <h2 id="Hard-experience"><a href="#Hard-experience" class="headerlink" title="Hard experience"></a>Hard experience</h2><blockquote>
 <p>During the lecture the laser cutter was broken. Who thought it’s just a nightmare-like beginning……</p>
@@ -206,7 +260,7 @@
 
 <script>
     // https://github.com/srobbin/jquery-backstretch
-    $.backstretch("/css/images/background.jpg?version=5-25-21-26");
+    $.backstretch("/css/images/background.jpg?version=5-25-45-31");
 
     
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
