@@ -13,6 +13,7 @@ byte level[][8]={{0x10,0x10,0x10,0x10,0x10,0x10,0x10,0x10},
                 {0x1E,0x1E,0x1E,0x1E,0x1E,0x1E,0x1E,0x1E}};
 
 int sensorValue = 0;
+int buttonValue = 0;
 int detail = 0;
 int lastLength = 0;
 char str[20] = "";
@@ -37,9 +38,21 @@ void loop() {
   // put your main code here, to run repeatedly:
   while(1)
   {
-    lcd.clear();
     sensorValue = analogRead(A0);
-    //Serial.println(sensorValue);
+    buttonValue = analogRead(A1);
+    /*
+    Serial.print(sensorValue);
+    Serial.print("   ");
+    Serial.print(buttonValue);
+    Serial.print('\n');
+    */
+
+    if(buttonValue < 1000)
+    {
+      delay(50);
+      continue;
+    }
+    lcd.clear();
     detail = map(sensorValue, 1023, 0, 0, 80);
 
     int fulls = detail / 5;

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<!-- Head -->
+<head>
+  <meta charset="utf-8">
+  
+  <title>Final Project | Fabo Academy X Course @ Shanghaitech</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Final ProjectIntentionI (and together with my roommates) had this experience: You bought a lot of games on Steam or Epic, but due to heavy school work, you do not have time to play those games. So I d">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Final Project">
+<meta property="og:url" content="http://kagamine-rin.github.io/Fablab-Course-Shanghaitech/2020/06/19/Final-Project/index.html">
+<meta property="og:site_name" content="Fabo Academy X Course @ Shanghaitech">
+<meta property="og:description" content="Final ProjectIntentionI (and together with my roommates) had this experience: You bought a lot of games on Steam or Epic, but due to heavy school work, you do not have time to play those games. So I d">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://kagamine-rin.github.io/Fablab-Course-Shanghaitech/2020/06/19/Final-Project/1.jpg?500x500">
+<meta property="og:image" content="http://kagamine-rin.github.io/Fablab-Course-Shanghaitech/2020/06/19/Final-Project/2.jpg?500x500">
+<meta property="og:image" content="http://kagamine-rin.github.io/Fablab-Course-Shanghaitech/2020/06/19/Final-Project/3.jpg?100x100">
+<meta property="og:image" content="http://kagamine-rin.github.io/Fablab-Course-Shanghaitech/2020/06/19/Final-Project/4.jpg?100x100">
+<meta property="og:image" content="http://kagamine-rin.github.io/Fablab-Course-Shanghaitech/2020/06/19/Final-Project/5.jpg?100x100">
+<meta property="og:image" content="http://kagamine-rin.github.io/Fablab-Course-Shanghaitech/2020/06/19/Final-Project/6.jpg?100x100">
+<meta property="og:image" content="http://kagamine-rin.github.io/Fablab-Course-Shanghaitech/2020/06/19/Final-Project/7.jpg?100x100">
+<meta property="og:image" content="http://kagamine-rin.github.io/Fablab-Course-Shanghaitech/2020/06/19/Final-Project/8.jpg?100x100">
+<meta property="og:image" content="http://kagamine-rin.github.io/Fablab-Course-Shanghaitech/2020/06/19/Final-Project/poster.png?500x500">
+<meta property="article:published_time" content="2020-06-19T08:41:29.000Z">
+<meta property="article:modified_time" content="2020-06-23T03:21:31.914Z">
+<meta property="article:author" content="Song Ze">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://kagamine-rin.github.io/Fablab-Course-Shanghaitech/2020/06/19/Final-Project/1.jpg?500x500">
+  
+    <link rel="alternative" href="/atom.xml" title="Fabo Academy X Course @ Shanghaitech" type="application/atom+xml">
+  
+  
+  <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.15/css/share.min.css">
+    <style>
+        .hljs-line-numbers {
+            text-align: right;
+            border-right: 1px solid #ccc;
+            color: #999;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+    </style>
+    <!-- 
+<link rel="stylesheet" href="/Fablab-Course-Shanghaitech/css/style.css">
+ -->
+    <!-- 
+<link rel="stylesheet" href="/Fablab-Course-Shanghaitech/css/code.css">
+ -->
+    <link rel="stylesheet" href="/Fablab-Course-Shanghaitech/css/style.css?version=6-23-30-59" type="text/css">
+    <link rel="stylesheet" href="/Fablab-Course-Shanghaitech/css/code.css?version=6-23-30-59" type="text/css">
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<script>
+	function set_image_size(image, width, height) 
+{
+    image.setAttribute("width", width + "px");
+    image.setAttribute("height", height + "px");
+}
+
+function hexo_resize_image()
+{
+    var imgs = document.getElementsByTagName('img');
+    for (var i = imgs.length - 1; i >= 0; i--) 
+    {
+        var img = imgs[i];
+
+        var src = img.getAttribute('src').toString();
+
+        var fields = src.match(/(?<=\?)\d*x\d*/g);
+        if (fields && fields.length == 1)
+        {
+            var values = fields[0].split("x");
+            if (values.length == 2)
+            {
+                var width = values[0];
+                var height = values[1];
+
+                if (!(width.length && height.length))
+                {
+                    var n_width = img.naturalWidth;
+                    var n_height = img.naturalHeight;
+                    if (width.length > 0)
+                    {
+                        height = n_height*width/n_width;
+                    }
+                    if (height.length > 0)
+                    {
+                        width = n_width*height/n_height;
+                    }
+                }
+                set_image_size(img, width, height);
+            }
+            continue;
+        }
+
+        fields = src.match(/(?<=\?)\d*/g);
+        if (fields && fields.length == 1)
+        {
+            var scale = parseFloat(fields[0].toString());
+            var width = scale/100.0*img.naturalWidth;
+            var height = scale/100.0*img.naturalHeight;
+            set_image_size(img, width, height);
+        }
+    }
+}
+window.onload = hexo_resize_image;
+</script>
+<body>
+
+<header>
+    <div class="navbar-fixed">
+        <nav class="blue darken-3 nav-extended">
+            <div class="nav-wrapper">
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="hide-on-med-and-down">
+                    
+                        <li><a href="/" class="nav-logo">Fabo Academy X Course @ Shanghaitech</a></li>
+                    
+                    
+                    <li><a class="" href="/Fablab-Course-Shanghaitech/">Home</a></li>
+                    
+                    <li><a class="" href="/Fablab-Course-Shanghaitech/archives">Archives</a></li>
+                    
+                </ul>
+            </div>
+        </nav>
+
+    </div>
+    <ul class="side-nav" id="mobile-demo">
+        
+        <li><a class="" href="/Fablab-Course-Shanghaitech/">Home</a></li>
+        
+        <li><a class="" href="/Fablab-Course-Shanghaitech/archives">Archives</a></li>
+        
+    </ul>
+    <!--You have to move ul out to make sure this work in mobile environment-->
+</header>
+
+
+<div class="container">
+      <article class="article-full">
+
+    <!-- Title -->
+    <h2 class="blog-item-title">
+        <a href="/Fablab-Course-Shanghaitech/2020/06/19/Final-Project/">
+            Final Project
+        </a>
+    </h2>
+
+    <!-- Date and Author -->
+    <p class="blog-item-meta">
+        Published on 2020 Jun 19 16:41:29
+        
+    
+        </br>
+        Last Updated on 2020 Jun 23 11:21:31
+        
+    </p>
+
+
+    <!-- Content -->
+    <h1 id="Final-Project"><a href="#Final-Project" class="headerlink" title="Final Project"></a>Final Project</h1><h2 id="Intention"><a href="#Intention" class="headerlink" title="Intention"></a>Intention</h2><p>I (and together with my roommates) had this experience: You bought a lot of games on Steam or Epic, but due to heavy school work, you do not have time to play those games.</p>
+<p>So I decided to make a timer such that it can record how much time I’ve been playing each game, and alarm me if it’s time to go to work.</p>
+<h2 id="Components"><a href="#Components" class="headerlink" title="Components"></a>Components</h2><ul>
+<li>Laser-cut box (wooden and acrylic)</li>
+<li>Servo motor<ul>
+<li>together with a 3D-printed servo actuator</li>
+</ul>
+</li>
+<li>Arduino<ul>
+<li>LCD 1602 screen</li>
+<li>Buttons x4</li>
+<li>Cables &amp; breadboard</li>
+<li>buzzer (unused)</li>
+</ul>
+</li>
+</ul>
+<h2 id="Features"><a href="#Features" class="headerlink" title="Features"></a>Features</h2><ul>
+<li>Half-transparent shell<ul>
+<li><img src="/Fablab-Course-Shanghaitech/2020/06/19/Final-Project/1.jpg?500x500" alt="a"></li>
+<li><img src="/Fablab-Course-Shanghaitech/2020/06/19/Final-Project/2.jpg?500x500" alt="a"></li>
+<li>with different cassettes</li>
+</ul>
+</li>
+<li>Timing each game<ul>
+<li>7 games to choose</li>
+<li><img src="/Fablab-Course-Shanghaitech/2020/06/19/Final-Project/3.jpg?100x100" alt="a"></li>
+<li>Works like a toaster; when cassette rises to the top, time is up</li>
+<li><img src="/Fablab-Course-Shanghaitech/2020/06/19/Final-Project/4.jpg?100x100" alt="a"></li>
+<li>With a progress bar</li>
+<li><img src="/Fablab-Course-Shanghaitech/2020/06/19/Final-Project/5.jpg?100x100" alt="a"></li>
+</ul>
+</li>
+<li>Record functionality<ul>
+<li>Saves data even if power off</li>
+<li><img src="/Fablab-Course-Shanghaitech/2020/06/19/Final-Project/6.jpg?100x100" alt="a"></li>
+<li>Can be cleaned</li>
+<li><img src="/Fablab-Course-Shanghaitech/2020/06/19/Final-Project/7.jpg?100x100" alt="a"></li>
+</ul>
+</li>
+<li>Dual language support<ul>
+<li>English and Japanese</li>
+<li><img src="/Fablab-Course-Shanghaitech/2020/06/19/Final-Project/8.jpg?100x100" alt="a"></li>
+</ul>
+</li>
+</ul>
+<h1 id="Poster"><a href="#Poster" class="headerlink" title="Poster"></a>Poster</h1><p><img src="/Fablab-Course-Shanghaitech/2020/06/19/Final-Project/poster.png?500x500" alt="efef"></p>
+
+
+    <hr/>
+
+    
+        <div class="social-share" data-disabled="weibo,qzone,qq,tencent,douban,linkedin,diandian,wechat,google,facebook,twitter"></div>
+    
+
+    <div class="blog-post">
+
+    <!--[...]-->
+    
+    <!-- Comments -->
+</div>
+
+    <!-- Tags and Categories links -->
+
+
+</article>
+
+
+</div>
+
+
+<footer class="grey darken-3">
+    <div class="footer-link">
+        
+        <a href="https://github.com/Kagamine-Rin" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+        
+        
+        
+        
+        
+        
+        <a href="http://music.163.com/#/user/home?id=259408707" target="_blank"><i class="fa fa-music fa-2x" aria-hidden="true"></i></a>
+        
+        
+          <a href="/atom.xml" target="_blank" title="rss_feed"><i class="fa fa-rss fa-2x" aria-hidden="true"></i></a>
+        
+    </div>
+    <div class="footer-ps">
+        <p>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> -
+            &copy; 2020 <a
+                    
+                    href="https://github.com/Kagamine-Rin" target="_blank"
+                    
+            > Song Ze</a> - Theme <a href="https://github.com/lazzzis/hexo-theme-mls" target="_blank">MLS</a>
+        </p>
+    </div>
+</footer>
+
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+
+<script src="//cdn.bootcss.com/highlight.js/9.6.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.15/js/social-share.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fitvids/1.1.0/jquery.fitvids.min.js"></script>
+
+<script src="/Fablab-Course-Shanghaitech/js/addition.js"></script>
+
+
+<script src="/Fablab-Course-Shanghaitech/js/zooming.js"></script>
+
+<!-- Disqus Comments -->
+
+
+
+<script>
+    // https://github.com/srobbin/jquery-backstretch
+    $.backstretch("/Fablab-Course-Shanghaitech/css/images/background.jpg?version=6-23-30-59");
+
+    
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-87274131-1', 'auto');
+        ga('send', 'pageview');
+    
+
+</script>
+
+
+</body>
+
+</html>

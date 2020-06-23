@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<!-- Head -->
+<head>
+  <meta charset="utf-8">
+  
+  <title>3D Scanning | Fabo Academy X Course @ Shanghaitech</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="3D scanningIt’s really an interesting thing to make a 3D scanned image of yourself. But the scanned image made me look very ugly so I did not really like that…… Editing the scanned imageI used the Aut">
+<meta property="og:type" content="article">
+<meta property="og:title" content="3D Scanning">
+<meta property="og:url" content="http://kagamine-rin.github.io/Fablab-Course-Shanghaitech/2020/06/19/3D-Scanning/index.html">
+<meta property="og:site_name" content="Fabo Academy X Course @ Shanghaitech">
+<meta property="og:description" content="3D scanningIt’s really an interesting thing to make a 3D scanned image of yourself. But the scanned image made me look very ugly so I did not really like that…… Editing the scanned imageI used the Aut">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://kagamine-rin.github.io/Fablab-Course-Shanghaitech/2020/06/19/3D-Scanning/1.jpg?500x500">
+<meta property="og:image" content="http://kagamine-rin.github.io/Fablab-Course-Shanghaitech/2020/06/19/3D-Scanning/2.jpg?500x500">
+<meta property="og:image" content="http://kagamine-rin.github.io/Fablab-Course-Shanghaitech/2020/06/19/3D-Scanning/3.jpg?500x500">
+<meta property="og:image" content="http://kagamine-rin.github.io/Fablab-Course-Shanghaitech/2020/06/19/3D-Scanning/4.jpg?500x500">
+<meta property="og:image" content="http://kagamine-rin.github.io/Fablab-Course-Shanghaitech/2020/06/19/3D-Scanning/5.jpg?500x500">
+<meta property="og:image" content="http://kagamine-rin.github.io/Fablab-Course-Shanghaitech/2020/06/19/3D-Scanning/6.jpg?500x500">
+<meta property="og:image" content="http://kagamine-rin.github.io/Fablab-Course-Shanghaitech/2020/06/19/3D-Scanning/7.jpg?500x500">
+<meta property="article:published_time" content="2020-06-19T08:40:44.000Z">
+<meta property="article:modified_time" content="2020-06-19T09:32:11.794Z">
+<meta property="article:author" content="Song Ze">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://kagamine-rin.github.io/Fablab-Course-Shanghaitech/2020/06/19/3D-Scanning/1.jpg?500x500">
+  
+    <link rel="alternative" href="/atom.xml" title="Fabo Academy X Course @ Shanghaitech" type="application/atom+xml">
+  
+  
+  <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.15/css/share.min.css">
+    <style>
+        .hljs-line-numbers {
+            text-align: right;
+            border-right: 1px solid #ccc;
+            color: #999;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+    </style>
+    <!-- 
+<link rel="stylesheet" href="/Fablab-Course-Shanghaitech/css/style.css">
+ -->
+    <!-- 
+<link rel="stylesheet" href="/Fablab-Course-Shanghaitech/css/code.css">
+ -->
+    <link rel="stylesheet" href="/Fablab-Course-Shanghaitech/css/style.css?version=6-23-30-59" type="text/css">
+    <link rel="stylesheet" href="/Fablab-Course-Shanghaitech/css/code.css?version=6-23-30-59" type="text/css">
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<script>
+	function set_image_size(image, width, height) 
+{
+    image.setAttribute("width", width + "px");
+    image.setAttribute("height", height + "px");
+}
+
+function hexo_resize_image()
+{
+    var imgs = document.getElementsByTagName('img');
+    for (var i = imgs.length - 1; i >= 0; i--) 
+    {
+        var img = imgs[i];
+
+        var src = img.getAttribute('src').toString();
+
+        var fields = src.match(/(?<=\?)\d*x\d*/g);
+        if (fields && fields.length == 1)
+        {
+            var values = fields[0].split("x");
+            if (values.length == 2)
+            {
+                var width = values[0];
+                var height = values[1];
+
+                if (!(width.length && height.length))
+                {
+                    var n_width = img.naturalWidth;
+                    var n_height = img.naturalHeight;
+                    if (width.length > 0)
+                    {
+                        height = n_height*width/n_width;
+                    }
+                    if (height.length > 0)
+                    {
+                        width = n_width*height/n_height;
+                    }
+                }
+                set_image_size(img, width, height);
+            }
+            continue;
+        }
+
+        fields = src.match(/(?<=\?)\d*/g);
+        if (fields && fields.length == 1)
+        {
+            var scale = parseFloat(fields[0].toString());
+            var width = scale/100.0*img.naturalWidth;
+            var height = scale/100.0*img.naturalHeight;
+            set_image_size(img, width, height);
+        }
+    }
+}
+window.onload = hexo_resize_image;
+</script>
+<body>
+
+<header>
+    <div class="navbar-fixed">
+        <nav class="blue darken-3 nav-extended">
+            <div class="nav-wrapper">
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="hide-on-med-and-down">
+                    
+                        <li><a href="/" class="nav-logo">Fabo Academy X Course @ Shanghaitech</a></li>
+                    
+                    
+                    <li><a class="" href="/Fablab-Course-Shanghaitech/">Home</a></li>
+                    
+                    <li><a class="" href="/Fablab-Course-Shanghaitech/archives">Archives</a></li>
+                    
+                </ul>
+            </div>
+        </nav>
+
+    </div>
+    <ul class="side-nav" id="mobile-demo">
+        
+        <li><a class="" href="/Fablab-Course-Shanghaitech/">Home</a></li>
+        
+        <li><a class="" href="/Fablab-Course-Shanghaitech/archives">Archives</a></li>
+        
+    </ul>
+    <!--You have to move ul out to make sure this work in mobile environment-->
+</header>
+
+
+<div class="container">
+      <article class="article-full">
+
+    <!-- Title -->
+    <h2 class="blog-item-title">
+        <a href="/Fablab-Course-Shanghaitech/2020/06/19/3D-Scanning/">
+            3D Scanning
+        </a>
+    </h2>
+
+    <!-- Date and Author -->
+    <p class="blog-item-meta">
+        Published on 2020 Jun 19 16:40:44
+        
+    
+        </br>
+        Last Updated on 2020 Jun 19 17:32:11
+        
+    </p>
+
+
+    <!-- Content -->
+    <h1 id="3D-scanning"><a href="#3D-scanning" class="headerlink" title="3D scanning"></a>3D scanning</h1><p>It’s really an interesting thing to make a 3D scanned image of yourself. But the scanned image made me look very ugly so I did not really like that……</p>
+<h2 id="Editing-the-scanned-image"><a href="#Editing-the-scanned-image" class="headerlink" title="Editing the scanned image"></a>Editing the scanned image</h2><p>I used the Autodesk Meshmixer to open the scanned me. The original scan result is like this:</p>
+<p><img src="/Fablab-Course-Shanghaitech/2020/06/19/3D-Scanning/1.jpg?500x500" alt="c"></p>
+<p>Look how ugly it is….</p>
+<p>Rotate the model and remove the part below my shoulders:</p>
+<p><img src="/Fablab-Course-Shanghaitech/2020/06/19/3D-Scanning/2.jpg?500x500" alt="c"> <img src="/Fablab-Course-Shanghaitech/2020/06/19/3D-Scanning/3.jpg?500x500" alt="c"></p>
+<p>My hair is not properly scanned and it is really a mess at a glance. So I removed them:</p>
+<p><img src="/Fablab-Course-Shanghaitech/2020/06/19/3D-Scanning/4.jpg?500x500" alt="c"></p>
+<p>And inserted a lily flower:</p>
+<p><img src="/Fablab-Course-Shanghaitech/2020/06/19/3D-Scanning/5.jpg?500x500" alt="c"></p>
+<h2 id="Result"><a href="#Result" class="headerlink" title="Result"></a>Result</h2><p>No need to talk more, let’s just see the result:</p>
+<p><img src="/Fablab-Course-Shanghaitech/2020/06/19/3D-Scanning/6.jpg?500x500" alt="c"> <img src="/Fablab-Course-Shanghaitech/2020/06/19/3D-Scanning/7.jpg?500x500" alt="c"></p>
+<p>Emmm… From the back side, it looks a little like Monk Tang San Zang (Chinese: 唐三藏) mentioned in the novel “Journey to the West” (Chinese: 西游记). He always wears a big hat which looks like a lily flower, which means “free from human desires and passions” (Chinese: 六根清净) in Buddhism.</p>
+<p>A little strange, right?</p>
+
+
+    <hr/>
+
+    
+        <div class="social-share" data-disabled="weibo,qzone,qq,tencent,douban,linkedin,diandian,wechat,google,facebook,twitter"></div>
+    
+
+    <div class="blog-post">
+
+    <!--[...]-->
+    
+    <!-- Comments -->
+</div>
+
+    <!-- Tags and Categories links -->
+
+
+</article>
+
+
+</div>
+
+
+<footer class="grey darken-3">
+    <div class="footer-link">
+        
+        <a href="https://github.com/Kagamine-Rin" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+        
+        
+        
+        
+        
+        
+        <a href="http://music.163.com/#/user/home?id=259408707" target="_blank"><i class="fa fa-music fa-2x" aria-hidden="true"></i></a>
+        
+        
+          <a href="/atom.xml" target="_blank" title="rss_feed"><i class="fa fa-rss fa-2x" aria-hidden="true"></i></a>
+        
+    </div>
+    <div class="footer-ps">
+        <p>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> -
+            &copy; 2020 <a
+                    
+                    href="https://github.com/Kagamine-Rin" target="_blank"
+                    
+            > Song Ze</a> - Theme <a href="https://github.com/lazzzis/hexo-theme-mls" target="_blank">MLS</a>
+        </p>
+    </div>
+</footer>
+
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+
+<script src="//cdn.bootcss.com/highlight.js/9.6.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.15/js/social-share.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fitvids/1.1.0/jquery.fitvids.min.js"></script>
+
+<script src="/Fablab-Course-Shanghaitech/js/addition.js"></script>
+
+
+<script src="/Fablab-Course-Shanghaitech/js/zooming.js"></script>
+
+<!-- Disqus Comments -->
+
+
+
+<script>
+    // https://github.com/srobbin/jquery-backstretch
+    $.backstretch("/Fablab-Course-Shanghaitech/css/images/background.jpg?version=6-23-30-59");
+
+    
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-87274131-1', 'auto');
+        ga('send', 'pageview');
+    
+
+</script>
+
+
+</body>
+
+</html>
